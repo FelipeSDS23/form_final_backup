@@ -1,0 +1,42 @@
+{name: 'Felipe Santos da Silva', email: 'teste@teste', phone: '(31) 9 9573-1315', plan: 'Advanced', planPeriod: 'Yearly', …}
+customizableProfile
+: 
+true
+email
+: 
+"teste@teste"
+largeStorage
+: 
+true
+name
+: 
+"Felipe Santos da Silva"
+onlineService
+: 
+true
+phone
+: 
+"(31) 9 9573-1315"
+plan
+: 
+"Advanced"
+planPeriod
+: 
+"Yearly"
+[[Prototype]]
+: 
+Object
+
+
+
+CREATE TABLE clientes (
+    idCliente INT PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(100) NOT NULL,
+    email VARCHAR(100) NOT NULL,
+    phone VARCHAR(40) NOT NULL,
+    plan ENUM('Arcade','Advanced','Pro') NOT NULL,
+    planPeriod ENUM('Monthly','Yearly') NOT NULL,
+    onlineService ENUM('true','false') NOT NULL,
+    largeStorage ENUM('true','false') NOT NULL,
+    customizableProfile ENUM('true','false') NOT NULL   
+);

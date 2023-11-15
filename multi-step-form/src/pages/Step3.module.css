@@ -1,0 +1,89 @@
+.addOnsContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}   
+
+.addOnsBtns {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    width: 100%;
+    padding: 15px;
+    margin: 6px;
+    border-radius: 10px;
+    border: 1px solid var(--Cool-gray);
+    background-color: var(--White);
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.addOnBtnActived {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    width: 100%;
+    padding: 15px;
+    margin: 6px;
+    border-radius: 10px;
+    border: 1px solid var(--Purplish-blue);
+    background-color: var(--Alabaster);
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.addOnsBtns:hover {
+    border: 1px solid var(--Purplish-blue);
+}
+
+.checkboxParagraphContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.checkboxParagraphContainer input {
+    display: none;
+}
+
+.customCheckbox {
+    background-color: var(--White);
+    color: var(--Purplish-blue);
+    height: 20px;
+    width: 20px;
+}
+
+.checkboxParagraphContainer p{
+    margin-left: 20px;
+    color: var(--Cool-gray);
+    line-height: 18px;
+}
+
+.addOnName {
+    font-weight: 700;
+    color: var(--marine-blue);
+}
+
+.addOnPrice {
+    font-weight: 500;
+    color: var(--Purplish-blue);
+}
+
+/* inicio mobile */
+@media screen and (max-width: 849px) {
+    .addOnsBtns, .addOnBtnActived {
+        font-size: 14px;
+    }
+
+    .addOnName {
+        font-size: 16px;
+    }
+
+    .checkboxParagraphContainer p{
+        margin-left: 10px;
+    }
+}
+/* fim mobile */

@@ -1,0 +1,82 @@
+.servicesListContainer {
+    background-color: var(--Alabaster);
+    padding: 25px;
+}
+
+.planContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 15px;
+    border-bottom: 1px solid var(--Cool-gray);
+}
+
+.planContainer p {
+    line-height: 20px;
+    color: var(--marine-blue);
+    font-weight: 700;
+}
+
+.planContainer span {
+    color: var(--marine-blue);
+    font-weight: 700;
+}
+
+.planContainer .changeLink {
+    text-decoration: underline;
+    color: var(--Cool-gray);
+    font-size: 13px;
+}
+
+.planContainer .changeLink:hover {
+    color: var(--Purplish-blue);
+}
+
+.addOnItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 15px;
+}
+
+.addOnName {
+    color: var(--Cool-gray);
+    font-size: 14px;
+}
+
+.addOnItem .addOnPrice {
+    color: var(--marine-blue);
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.totalValueContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 25px;
+}
+
+.totalValue {
+    font-weight: 700;
+    color: var(--Purplish-blue);
+    font-size: 17px;
+}
+
+.hidden {
+    display: none;
+}
+
+/* inicio mobile */
+@media screen and (max-width: 849px) {
+    .planContainer p {
+        font-size: 16px;
+    }
+
+    .addOnName {
+        color: var(--Cool-gray);
+        font-size: 14px;
+    }
+
+}
+/* fim mobile */

@@ -1,0 +1,156 @@
+.planContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.plansCards {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    border: 1px solid var(--Light-gray);
+    border-radius: 10px;
+    margin: 10px;
+    width: 100%;
+    height: 170px;
+    padding: 15px;
+    cursor: pointer;
+    outline: none;
+    background-color: var(--White);
+    text-align: left;
+}
+
+.planCardActived {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    border: 1px solid var(--Purplish-blue);
+    border-radius: 10px;
+    margin: 10px;
+    width: 100%;
+    height: 170px;
+    padding: 15px;
+    cursor: pointer;
+    outline: none;
+    background-color: var(--Alabaster);
+    text-align: left;
+}
+
+.plansCards:focus {
+    border: 1px solid var(--Purplish-blue);
+}
+
+.activePlanCard {
+    border: 1px solid var(--Purplish-blue);
+}
+
+.plansCards:hover {
+    border: 1px solid var(--Purplish-blue);
+}
+
+.planPriceContainer span{
+    line-height: 20px;
+}
+
+.planName {
+    color: var(--marine-blue);
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.planPrice {
+    color: var(--Cool-gray);
+    font-weight: 400;
+    font-size: 15px; 
+}
+
+.freeMonths {
+    color: var(--marine-blue);
+    font-size: 13px;
+    display: block;
+}
+
+.planPeriodContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0px;
+    background-color: var(--Alabaster);
+}
+
+.active {
+    font-weight: 700;
+    color: var(--marine-blue);
+}
+
+.disable {
+    font-weight: 700;
+    color: var(--Cool-gray);
+}
+
+.hide {
+    display: none;
+}
+
+.buttonContainer {
+    margin: 0px 20px;
+}
+
+/* inicio button */
+.slider {
+    position: relative;
+    background: var(--marine-blue);
+    width: 40px;
+    height: 20px;
+    border: 1px solid var(--marine-blue);
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.button {
+    background: var(--White);
+    border: none;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    pointer-events: none;
+    bottom: 2px;
+    left: 3px;
+    position: absolute;
+    transition: all 300ms ease-in-out;
+}
+
+.toggleInput:checked ~ .slider > .button {
+    left: 20px;
+}
+
+.toggleInput{
+    display: none;
+}
+/* fim button */
+
+
+/* inicio mobile */
+@media screen and (max-width: 849px) {
+    .planContainer {
+        flex-direction: column;
+    }
+
+    .plansCards, .planCardActived {
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        height: 78px;
+        padding: 15px;
+        margin: 7px 22px;
+        max-width: 450px;
+    }
+
+    .planPriceContainer {
+        margin-left: 15px;
+    }
+}
+/* fim mobile */

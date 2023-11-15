@@ -1,0 +1,246 @@
+@font-face {
+    font-family: "Ubuntu";
+    font-weight: 400;
+    src: url(assets/fonts/Ubuntu-Regular.ttf) format('truetype');
+}
+@font-face {
+    font-family: "Ubuntu";
+    font-weight: 500;
+    src: url(assets/fonts/Ubuntu-Medium.ttf) format('truetype');
+}
+@font-face {
+    font-family: "Ubuntu";
+    font-weight: 700;
+    src: url(assets/fonts/Ubuntu-Bold.ttf) format('truetype');
+}
+
+:root {
+    /* primaries colors */
+    --marine-blue: #02295a;
+    --Purplish-blue: #473dff;
+    --Pastel-blue: #adbeff;
+    --Light-blue: #bfe2fd;
+    --Strawberry-red: #ed3548;
+
+    /* neutral colors */
+    --Cool-gray: #9699ab;
+    --Light-gray: #d6d9e6;
+    --Magnolia: #f0f6ff;
+    --Alabaster: #fafbff;
+    --White: #ffffff;
+
+    /* fonts */
+    --font-size-paragraph: 16px;
+    --main-font: "Ubuntu"; /* Weights: 400, 500, 700 */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--main-font);
+    text-decoration: none;
+}
+
+
+/* inicio mobile */
+@media screen and (max-width: 849px) {
+    /* container dos steps */
+    .appContainer {
+        width: 100vw;
+        height: 100svh;
+        background-color: var(--White);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        height: -webkit-fill-available;
+    }
+
+    .sidebarContainer {
+        width: 100%;
+        height: 25%;
+        position: absolute;
+        top: 0;
+        background: url(assets/images/bg-sidebar-mobile.svg);
+        background-size: cover;
+        background-position: bottom;
+    }
+
+    .rightAppContainer {
+        width: 100%;
+        height: 100%;
+        background-color: var(--Magnolia);
+    }
+
+    .title {
+        color: var(--marine-blue);
+    }
+
+    .stepDescription {
+        font-size: var(--font-size-paragraph);
+        color: var(--Cool-gray);
+        margin: 7px 0px 30px 0px;
+    }
+
+    .stepContainer {
+        width: 93%;
+        position: absolute;
+        top: 14vh;
+        left: 3.5%;
+        padding: 20px; 
+        border-radius: 15px;
+        background-color: var(--White);
+        box-shadow: 5px 5px 30px 5px #0000000f;
+    }
+
+    /* INICIO NAVIGATION */
+    .navigationContainer{
+        width: 100%;
+        height: 11%;
+        position: absolute;
+        bottom: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: var(--White);
+    }
+
+    .nextBtn {
+        height: 45px;
+        width: 100px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        background-color: var(--marine-blue);
+        margin-right: 15px;
+    }
+
+    .confirmBtn {
+        height: 45px;
+        width: 100px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        background-color: var(--Purplish-blue);
+        color: var(--White);
+        margin-right: 15px;
+    }
+
+    .backBtn {
+        text-decoration: none;
+        color: var(--Cool-gray);
+        font-weight: 700;
+        margin-left: 15px;
+    }
+
+    .backBtn:hover {
+        color: var(--marine-blue);
+    }
+
+    .link .nextBtn {
+        text-decoration: none;
+        color: var(--White);
+    }
+    /* FIM NAVIGATION */
+}
+
+
+/* inicio desktop */
+@media screen and (min-width: 850px) {
+    /* inicio container dos steps */
+    .appContainer {
+        width: 850px;
+        height: 520px;
+        border-radius: 20px;
+        box-shadow: 2px 2px 30px 2px #0000000d;
+        background-color: var(--White);
+        padding: 15px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .sidebarContainer {
+        width: 30%;
+        height: 100%;
+        border-radius: 10px;
+        background: url(assets/images/bg-sidebar-desktop.svg);
+        background-size: cover;
+        background-position: bottom;
+    }
+
+    .rightAppContainer {
+        width: 70%;
+        height: 100%;
+        padding: 50px 55px 0px 70px;
+    }
+
+    .title {
+        color: var(--marine-blue);
+    }
+
+    .stepDescription {
+        font-size: var(--font-size-paragraph);
+        color: var(--Cool-gray);
+        margin: 7px 0px 30px 0px;
+    }
+
+    .stepContainer {
+        height: 85%;
+    }
+
+    /* INICIO NAVIGATION */
+    .navigationContainer{
+        height: 15%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .nextBtn {
+        height: 40px;
+        width: 90px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        background-color: var(--marine-blue);
+    }
+
+    .nextBtn:hover {
+        background-color: #022b7dd2;
+    }
+
+    .confirmBtn {
+        height: 40px;
+        width: 90px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        background-color: var(--Purplish-blue);
+        color: var(--White);
+    }
+
+    .confirmBtn:hover {
+        background-color: #473dffaf;
+    }
+
+    .backBtn {
+        text-decoration: none;
+        color: var(--Cool-gray);
+        font-weight: 700;
+    }
+
+    .backBtn:hover {
+        color: var(--marine-blue);
+    }
+
+    .link .nextBtn {
+        text-decoration: none;
+        color: var(--White);
+    }
+    /* FIM NAVIGATION */
+}

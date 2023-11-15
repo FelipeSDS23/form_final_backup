@@ -1,0 +1,49 @@
+.labelInputContainer {
+    margin: 22px 0px;
+}
+
+.labelErrorContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.errorMsg {
+    color: var(--Strawberry-red);
+    font-weight: 700;
+    font-size: 13px;
+    display: none;
+}
+
+.label {
+    color: var(--marine-blue);
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.input {
+    width: 100%;
+    height: 42px;
+    margin-top: 5px;
+    padding: 10px;
+    border: 1px solid var(--Light-gray);
+    outline: none;
+    border-radius: 5px;
+    color: var(--marine-blue);
+    font-weight: 500;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.input:focus {
+    border: 1px solid var(--Purplish-blue);
+}
+
+/* inicio mobile */
+@media screen and (max-width: 849px) {
+    .labelInputContainer {
+        margin: 22px auto;
+        max-width: 450px;
+    }
+}
+/* fim mobile */
