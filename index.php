@@ -2,8 +2,8 @@
     header("Access-Control-Allow-Origin: *");
     header("Access-Control-Allow-Headers: *");
 
-    include_once "dbConnect.php";
-    $objCon = new dbConnect;
+    include_once "DbConnect.php";
+    $objCon = new DbConnect;
     $conn = $objCon->connect();
     
     // Transforms JSON em um obj php

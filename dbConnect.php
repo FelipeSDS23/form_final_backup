@@ -1,6 +1,6 @@
 <?php
     // Conexão com o banco de dados
-    class dbConnect {
+    class DbConnect {
         // Variaveis de conexão
         private $host = "localhost";
         private $user = "root";
